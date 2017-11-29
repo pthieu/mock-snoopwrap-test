@@ -9,7 +9,7 @@ const r = new snoowrap({
   refreshToken: '4693521978-297_6VuisCKZXrQEtDBC5fWoT6k'
 });
 
-r.getUser(uname).getComments({limit:100}).then(comments => {
+r.getUser(uname).getComments({limit:1000}).then(comments => {
     let ids = comments.map(comment => comment.id);
     console.log(ids);
     document.write("Done!");
